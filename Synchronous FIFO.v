@@ -1,4 +1,4 @@
-```verilog
+
 module synchronous_fifo #(parameter DEPTH=8, DATA_WIDTH=8) (
   input clk, rst_n,
   input w_en, r_en,
@@ -37,4 +37,4 @@ module synchronous_fifo #(parameter DEPTH=8, DATA_WIDTH=8) (
   assign full = ((w_ptr+1'b1) == r_ptr);
   assign empty = (w_ptr == r_ptr);
 endmodule
-```
+

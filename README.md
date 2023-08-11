@@ -12,6 +12,7 @@ There are two types of FIFOs:
 2) Asynchronous FIFO
 
 SYNCHRONOUS FIFO 
+
 In Synchronous FIFO, data read and write operations use the same clock frequency. Usually, they are used with high clock frequency to support high-speed systems.
 
 Synchronous FIFO Operation

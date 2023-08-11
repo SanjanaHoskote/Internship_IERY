@@ -17,14 +17,14 @@ In Synchronous FIFO, data read and write operations use the same clock frequency
 
 Synchronous FIFO Operation
 Signals:
-1) wr_en: write enable
-2) wr_data: write data
-full: FIFO is full
-empty: FIFO is empty
-rd_en: read enable
-rd_data: read data
-w_ptr: write pointer
-r_ptr: read pointer    
+- wr_en: write enable
+- wr_data: write data
+- full: FIFO is full
+- empty: FIFO is empty
+- rd_en: read enable
+- rd_data: read data
+- w_ptr: write pointer
+- r_ptr: read pointer    
 
 FIFO write operation
 FIFO can store/write the wr_data at every posedge of the clock based on wr_en signal till it is full. The write pointer gets incremented on every data write in FIFO memory.

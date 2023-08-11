@@ -26,10 +26,12 @@ Signals:
 - w_ptr: write pointer
 - r_ptr: read pointer    
 
-FIFO write operation
+FIFO write operation:
+
 FIFO can store/write the wr_data at every posedge of the clock based on wr_en signal till it is full. The write pointer gets incremented on every data write in FIFO memory.
 
-FIFO read operation
+FIFO read operation: 
+
 The data can be taken out or read from FIFO at every posedge of the clock based on the rd_en signal till it is empty. The read pointer gets incremented on every data read from FIFO memory.
 
 <img width="549" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/bd0fd89e-b515-4673-a521-997943ac6318">

@@ -17,8 +17,8 @@ In Synchronous FIFO, data read and write operations use the same clock frequency
 
 Synchronous FIFO Operation
 Signals:
-wr_en: write enable
-wr_data: write data
+1) wr_en: write enable
+2) wr_data: write data
 full: FIFO is full
 empty: FIFO is empty
 rd_en: read enable

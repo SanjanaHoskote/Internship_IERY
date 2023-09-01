@@ -10,7 +10,7 @@ These include :
 # Quick links :
 - Files:
   - [Synchronous FIFO RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
-  - Synchronous FIFO testbench
+  - [Synchronous FIFO testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SynchronousFIFO_TB.v)
   - [Asynchronous FIFO RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Asynchronous%20FIFO.v)
   - Asynchronous FIFO testbench
   - [SPI RTL](SPI.v)
@@ -94,8 +94,8 @@ The full condition means every slot in the FIFO is occupied, but then w_ptr and 
 Thus, the last slot of FIFO is intentionally kept empty, and the full condition can be written as ((w_ptr+1’b1) == r_ptr)
 
 ### Synchronous FIFO Verilog Code
-[Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
-[Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
+- [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
+- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SynchronousFIFO_TB.v)
 
 ### Simulation Results
 

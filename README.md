@@ -22,6 +22,33 @@ These include :
   
 - Navigation through the report
   - [Introduction to FIFO](#1)
+  - [Synchronous FIFO](#2)
+     - [Operation](#3)
+     - [Verilog Code](#4)
+     - [Simulation Results](#5)
+  - [Asynchronous FIFO](#6)
+     - [Operation](#7)
+     - [Verilog Code](#8)
+     - [Simulation Results](#9)
+  - [Communication Protocols](#10)
+     - [SPI](#11)
+       - [Block Diagram](#12)
+       - [Timing Diagram](#13)
+       - [State Diagram](#14)
+       - [Verilog Code](#15)
+       - [Simulation Results](#16)
+     - [I2C](#17)
+       - [Block Diagram](#18)
+       - [Timing Diagram](#19)
+       - [State Diagram](#20)
+       - [Verilog Code](#21)
+       - [Simulation Results](#22)
+    - [UART](#23)
+       - [Block Diagram](#24)
+       - [Timing Diagram](#25)
+       - [State Diagram](#26)
+       - [Verilog Code](#27)
+       - [Simulation Results](#28)
 
 <a name="1"></a>  
 ## FIFO 

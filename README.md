@@ -114,12 +114,14 @@ In asynchronous FIFO, data read and write operations use different clock frequen
 
 **Full and Empty Conditions:**
 Efficiently detect full and empty conditions directly using gray-coded write and read pointers, eliminating the need for additional hardware to convert them into binary form.
+
 Full condition - wfull = (g_wptr_next == {~g_rptr_sync[PTR_WIDTH:PTR_WIDTH-1], g_rptr_sync[PTR_WIDTH-2:0]});
+
 Empty condition - rempty = (g_wptr_sync == g_rptr_next);
 
 ### Asynchronous FIFO Verilog Code
-[Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Asynchronous%20FIFO.v)
-[Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
+- [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Asynchronous%20FIFO.v)
+- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
 
 ### Simulation Results
 

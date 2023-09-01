@@ -8,7 +8,8 @@ These include :
    - UART
 # Quick links :
 - Files:
-  - Synchronous FIFO RTL [Link to my script](/scripts/Synchronous FIFO.v)
+  - [Synchronous FIFO RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
+
 
   - Synchronous FIFO testbench
   - Asynchronous FIFO RTL

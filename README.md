@@ -1,12 +1,26 @@
 # Internship_IERY
-This repository consists of all the prerequisites of the main AXI to APB project done as a part of our internship. 
-Theses included :
+This repository consists of all the prerequisites of the main AXI to APB project done as a part of our internship. We have designed and implemented it in Verilog. 
+These include :
 - Synchronous and Asynchronous FIFO
--  basic communication protocols:
+-  Basic communication protocols:
    - SPI
    - I2c
    - UART
-
+# Quick links :
+- Files:
+  - Synchronous FIFO RTL
+  - Synchronous FIFO testbench
+  - Asynchronous FIFO RTL
+  - Asynchronous FIFO testbench
+  - SPI RTL
+  - SPI testbench
+  - I2C RTL
+  - I2C testbench
+  - UART RTL
+  - UART testbench
+  
+- Navigation through the report
+  
 FIFO
 First In First Out (FIFO) is a very popular and useful design block for purpose of synchronization and a handshaking mechanism between the modules.
 Depth of FIFO: The number of slots or rows in FIFO is called the depth of the FIFO.

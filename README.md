@@ -147,7 +147,8 @@ The Serial Peripheral Interface, SPI, is an interface specification for synchron
  <img width="401" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/c221bcdb-a943-4f73-9cfa-142f86a9b6dd">
 
  ### State Diagram 
-<img width="784" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/e5e43bca-04c1-4011-a5d1-4bcddc355f4e">
+<img width="400" alt="spisd" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/a09744f9-4980-47d8-8e84-894da7e8dfa2">
+
  
 ### SPI Verilog Code
 - [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI.v)

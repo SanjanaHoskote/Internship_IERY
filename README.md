@@ -12,13 +12,13 @@ These include :
   - [Synchronous FIFO RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
   - [Synchronous FIFO testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SynchronousFIFO_TB.v)
   - [Asynchronous FIFO RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Asynchronous%20FIFO.v)
-  - Asynchronous FIFO testbench
+  - [Asynchronous FIFO testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/AsynchronousFIFO_TB.v)
   - [SPI RTL](SPI.v)
   - [SPI testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI%20tb.v)
   - [I2C RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master.v)
   - [I2C testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master_tb.v)
-  - UART RTL
-  - UART testbench
+  - [UART RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/uart.v)
+  - [UART testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/uart_tb.v)
   
 - Navigation through the report :
   - [Introduction to FIFO](#1)

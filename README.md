@@ -21,7 +21,9 @@ These include :
   - UART testbench
   
 - Navigation through the report
-**FIFO**  
+
+  
+## FIFO 
 FIFO, which stands for First In First Out, is a widely used and valuable design component serving the purpose of synchronization and facilitating communication between modules. 
 Depth of FIFO: The depth of a FIFO refers to the number of slots or rows it contains, determining its storage capacity.
 Width of FIFO: The width of a FIFO pertains to the number of bits that can be accommodated within each slot or row, defining its data storage capability.

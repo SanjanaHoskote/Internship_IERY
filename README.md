@@ -125,6 +125,37 @@ Empty condition - rempty = (g_wptr_sync == g_rptr_next);
 
 <ss>
 
+## Communication protocols 
+## SPI - Serial Peripheral Interface
+
+The Serial Peripheral Interface, SPI, is an interface specification for synchronous serial data transfer, using a clock.
+- SPI supports half/full duplex serial communication.
+- It is synchronous communication protocol.
+- Four wire communication protocol.
+- Most cases, one master multiple slave protocol but also supports multiple master configuration
+- It supports max speed up to 10Mbps
+- Master provides clock for synchronisation
+- It supports 8 and 16 bit format.
+  
+ ### Block Diagram
+ <img width="188" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/65e56af4-4552-4269-89fe-7d39897e3d5c">
+ <img width="240" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/c4ba84bd-5251-4c66-a227-c2636c48e2e4">
+
+ ### Timing diagram / CPOL, CPHA
+ <img width="401" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/c221bcdb-a943-4f73-9cfa-142f86a9b6dd">
+
+ ### State Diagram 
+ <img width="335" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/76357db5-1d94-47b3-a600-0c8ff957432f">
+ 
+### SPI Verilog Code
+- [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI.v)
+- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI%20tb.v)
+
+### Simulation results
+<img width="784" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/21aeda57-bdb4-4dc7-b663-a22329d88afb">
+
+
+
 
 
 

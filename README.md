@@ -1,5 +1,11 @@
 # Internship_IERY
-This repository consists of all the prerequisites and the main axi to apb project done as a part of our internship.
+This repository consists of all the prerequisites of the main AXI to APB project done as a part of our internship. 
+Theses included :
+- Synchronous and Asynchronous FIFO
+-  basic communication protocols
+  - SPI
+  - I2c
+  - UART
 
 FIFO
 First In First Out (FIFO) is a very popular and useful design block for purpose of synchronization and a handshaking mechanism between the modules.

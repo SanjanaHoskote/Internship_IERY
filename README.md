@@ -2,7 +2,7 @@
 This repository consists of all the prerequisites of the main AXI to APB project done as a part of our internship. 
 Theses included :
 - Synchronous and Asynchronous FIFO
--  basic communication protocols
+-  basic communication protocols:
   - SPI
   - I2c
   - UART

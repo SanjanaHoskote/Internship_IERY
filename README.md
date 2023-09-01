@@ -9,13 +9,11 @@ These include :
 # Quick links :
 - Files:
   - [Synchronous FIFO RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
-
-
   - Synchronous FIFO testbench
   - [Asynchronous FIFO RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Asynchronous%20FIFO.v)
   - Asynchronous FIFO testbench
   - [SPI RTL](SPI.v)
-  - SPI testbench
+  - [SPI testbench](SPI tb.v)
   - I2C RTL
   - I2C testbench
   - UART RTL

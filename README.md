@@ -20,7 +20,7 @@ These include :
   - UART RTL
   - UART testbench
   
-- Navigation through the report
+- Navigation through the report :
   - [Introduction to FIFO](#1)
   - [Synchronous FIFO](#2)
      - [Operation](#3)

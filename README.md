@@ -15,8 +15,8 @@ These include :
   - Asynchronous FIFO testbench
   - [SPI RTL](SPI.v)
   - [SPI testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI%20tb.v)
-  - [I2C RTL](i2c_master.v)
-  - [I2C testbench](i2c_master_tb.v)
+  - [I2C RTL](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master.v)
+  - [I2C testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master_tb.v)
   - UART RTL
   - UART testbench
   

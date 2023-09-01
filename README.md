@@ -21,16 +21,16 @@ These include :
   - UART testbench
   
 - Navigation through the report
-  
-FIFO
-First In First Out (FIFO) is a very popular and useful design block for purpose of synchronization and a handshaking mechanism between the modules.
-Depth of FIFO: The number of slots or rows in FIFO is called the depth of the FIFO.
+**FIFO**  
+FIFO, which stands for First In First Out, is a widely used and valuable design component serving the purpose of synchronization and facilitating communication between modules. 
+Depth of FIFO: The depth of a FIFO refers to the number of slots or rows it contains, determining its storage capacity.
+Width of FIFO: The width of a FIFO pertains to the number of bits that can be accommodated within each slot or row, defining its data storage capability.
 
-Width of FIFO: The number of bits that can be stored in each slot or row is called the width of the FIFO.
+FIFOs come in two primary types:
+1. Synchronous FIFO
+2. Asynchronous FIFO
 
-There are two types of FIFOs:
-1) Synchronous FIFO
-2) Asynchronous FIFO
+These two types of FIFOs play pivotal roles in ensuring orderly data flow and synchronization between components in various digital systems.
 
 SYNCHRONOUS FIFO 
 

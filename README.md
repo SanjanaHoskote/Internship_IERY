@@ -34,11 +34,14 @@ FIFOs come in two primary types:
 
 These two types of FIFOs play pivotal roles in ensuring orderly data flow and synchronization between components in various digital systems.
 
-SYNCHRONOUS FIFO 
+## SYNCHRONOUS FIFO 
 
 In Synchronous FIFO, data read and write operations use the same clock frequency. Usually, they are used with high clock frequency to support high-speed systems.
 
-Synchronous FIFO Operation
+<img width="568" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/650105c6-3ef0-4273-9c43-944c1aa3e8cf"> 
+
+### Synchronous FIFO Operation
+
 Signals:
 - wr_en: write enable
 - wr_data: write data
@@ -49,18 +52,28 @@ Signals:
 - w_ptr: write pointer
 - r_ptr: read pointer    
 
-FIFO write operation:
-
+**FIFO write operation:**
 FIFO can store/write the wr_data at every posedge of the clock based on wr_en signal till it is full. The write pointer gets incremented on every data write in FIFO memory.
 
-FIFO read operation: 
-
+**FIFO read operation:**
 The data can be taken out or read from FIFO at every posedge of the clock based on the rd_en signal till it is empty. The read pointer gets incremented on every data read from FIFO memory.
 
-<img width="549" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/bd0fd89e-b515-4673-a521-997943ac6318">
+**Empty condition**
+w_ptr == r_ptr i.e. Write and read pointers has the same value.
 
+**Full condition**
+The full condition means every slot in the FIFO is occupied, but then w_ptr and r_ptr will again have the same value. Thus, it is not possible to determine whether it is a full or empty condition. 
+Thus, the last slot of FIFO is intentionally kept empty, and the full condition can be written as ((w_ptr+1’b1) == r_ptr)
 
-ASYNCHRONOUS FIFO
+## Synchronous FIFO Verilog Code
+[Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
+[Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
+
+## Simulation Results
+
+<ss>
+
+## ASYNCHRONOUS FIFO
 
 In asynchronous FIFO, data read and write operations use different clock frequencies. Since write and read clocks are not synchronized, it is referred to as asynchronous FIFO. Usually, these are used in systems where data need to pass from one clock domain to another which is generally termed as ‘clock domain crossing’. Thus, asynchronous FIFO helps to synchronize data flow between two systems working on different clocks.
 
@@ -89,5 +102,5 @@ In the case of synchronous FIFO, the write and read pointers are generated on th
 
 
 
-<img width="560" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/6ff381a6-cc6a-4333-acfb-008fcb16b864">
+
 

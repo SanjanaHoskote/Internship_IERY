@@ -158,8 +158,34 @@ The Serial Peripheral Interface, SPI, is an interface specification for synchron
 <img width="784" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/21aeda57-bdb4-4dc7-b663-a22329d88afb">
 
 
+## I2C - Inter-Integrated Circuit
+Certainly, here are key points about the I2C (Inter-Integrated Circuit) communication protocol presented in the same format you provided for SPI:
 
+ - Serial Communication Protocol : I2C is an interface specification for synchronous serial data transfer, using a clock.
+ -  Half/Full Duplex Suppor : I2C supports both half-duplex and full-duplex serial communication modes.
+ -  Synchronous Communication : It is a synchronous communication protocol, utilizing a shared clock signal for synchronization.
+ -  Two-Wire Communication Protocol**: I2C is a two-wire protocol, consisting of a data line (SDA) and a clock line (SCL) for communication.
+    - Serial Data Line (SDA): SDA is used for bidirectional data transfer between the master and slave devices.
+    - Serial Clock Line (SCL): SCL provides the clock signal that synchronizes the data transfer between the master and slave devices.
+- Master-Slave Configuration : In most cases, I2C follows a one-master-multiple-slaves protocol, but it also supports multiple master configurations.
+- Maximum Speed : I2C supports maximum speeds of up to several Mbps, commonly ranging from 100 kbps (standard mode) to 3.4 Mbps (high-speed mode).
+- Clock Source : The master device provides the clock signal for synchronization.
+- Data Formats : I2C supports both 8-bit and 16-bit data formats for communication.
 
+ ### Block Diagram
+<img width="466" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/2d896bf2-6086-4570-ba5d-b0a9937b570b">
 
+ ### Timing diagram 
+<img width="695" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/19e0147e-7fdf-4b8c-af6c-5ece2d02aecf">
+
+ ### State Diagram 
+<img width="459" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/56e3a421-5a9d-4da2-8954-afe6f2b77355">
+ 
+### I2C Verilog Code
+- [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI.v)
+- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI%20tb.v)
+- 
+### Simulation results
+<img width="943" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/edadb642-ac01-45b3-a989-a4c9779e9554">
 
 

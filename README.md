@@ -21,8 +21,9 @@ These include :
   - UART testbench
   
 - Navigation through the report
+  - [Introduction to FIFO](#1)
 
-  
+<a name="1"></a>  
 ## FIFO 
 FIFO, which stands for First In First Out, is a widely used and valuable design component serving the purpose of synchronization and facilitating communication between modules. 
 Depth of FIFO: The depth of a FIFO refers to the number of slots or rows it contains, determining its storage capacity.
@@ -182,10 +183,43 @@ Certainly, here are key points about the I2C (Inter-Integrated Circuit) communic
 <img width="459" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/56e3a421-5a9d-4da2-8954-afe6f2b77355">
  
 ### I2C Verilog Code
-- [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI.v)
-- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI%20tb.v)
+- [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master.v)
+- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master_tb.v)
 - 
 ### Simulation results
 <img width="943" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/edadb642-ac01-45b3-a989-a4c9779e9554">
+
+## UART - Universal Asynchronous Receiver/Transmitter
+
+A UART (Universal Asynchronous Receiver/Transmitter) is a hardware module that enables asynchronous serial communication by converting parallel data to serial data, allowing electronic devices to transmit and receive data with start and stop bits for synchronization.
+
+- Serial Communication : UART enables asynchronous serial communication.
+- Two-Wire : Typically uses two wires (TX and RX) for data exchange.
+- Point-to-Point : Primarily used for direct communication between two devices.
+- Baud Rate : Requires a common baud rate for synchronization.
+- Start and Stop Bits : Employs start and stop bits for data framing.
+- Character Format : Supports variable character formats, often 8-N-1 (8 data bits, no parity, 1 stop bit).
+- Full-Duplex : Allows simultaneous data transmission and reception.
+- Versatile : Widely used in microcontroller, sensor, and peripheral communication.
+- No Shared Clock : Unlike SPI or I2C, UART doesn't use a shared clock signal.
+- No Addressing : Lacks built-in addressing; devices must coordinate data transfer.
+
+ ### Block Diagram
+ <img width="188" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/65e56af4-4552-4269-89fe-7d39897e3d5c">
+ <img width="240" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/c4ba84bd-5251-4c66-a227-c2636c48e2e4">
+
+ ### Timing diagram 
+ <img width="401" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/c221bcdb-a943-4f73-9cfa-142f86a9b6dd">
+
+ ### State Diagram 
+<img width="400" alt="spisd" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/a09744f9-4980-47d8-8e84-894da7e8dfa2">
+
+### UART Verilog Code
+- [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master.v)
+- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master_tb.v)
+- 
+### Simulation results
+<img width="943" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/edadb642-ac01-45b3-a989-a4c9779e9554">
+
 
 

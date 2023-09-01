@@ -1,7 +1,8 @@
 # Internship_IERY
 This repository consists of all the prerequisites of the main AXI to APB project done as a part of our internship. We have designed and implemented it in Verilog. 
 These include :
-- Synchronous and Asynchronous FIFO
+- Synchronous FIFO
+- Asynchronous FIFO
 -  Basic communication protocols:
    - SPI
    - I2c

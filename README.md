@@ -233,21 +233,20 @@ A UART (Universal Asynchronous Receiver/Transmitter) is a hardware module that e
 - No Addressing : Lacks built-in addressing; devices must coordinate data transfer.
 
  ### Block Diagram
- <img width="188" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/65e56af4-4552-4269-89fe-7d39897e3d5c">
- <img width="240" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/c4ba84bd-5251-4c66-a227-c2636c48e2e4">
+ <bd>
 
  ### Timing diagram 
- <img width="401" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/c221bcdb-a943-4f73-9cfa-142f86a9b6dd">
+ <td>
 
  ### State Diagram 
-<img width="400" alt="spisd" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/a09744f9-4980-47d8-8e84-894da7e8dfa2">
+<sd>
 
 ### UART Verilog Code
-- [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master.v)
-- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master_tb.v)
+- [Design]()
+- [Testbench]()
   
 ### Simulation results
-<img width="943" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/edadb642-ac01-45b3-a989-a4c9779e9554">
+<ss>
 
 
 

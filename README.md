@@ -245,7 +245,7 @@ A UART (Universal Asynchronous Receiver/Transmitter) is a hardware module that e
 ### UART Verilog Code
 - [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master.v)
 - [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master_tb.v)
-- 
+  
 ### Simulation results
 <img width="943" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/edadb642-ac01-45b3-a989-a4c9779e9554">
 

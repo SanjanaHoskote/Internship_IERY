@@ -12,7 +12,7 @@ These include :
 
 
   - Synchronous FIFO testbench
-  - Asynchronous FIFO RTL
+  - [Asynchronous FIFO RTL] (https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Asynchronous%20FIFO.v)
   - Asynchronous FIFO testbench
   - SPI RTL
   - SPI testbench

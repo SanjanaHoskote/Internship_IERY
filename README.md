@@ -65,11 +65,11 @@ w_ptr == r_ptr i.e. Write and read pointers has the same value.
 The full condition means every slot in the FIFO is occupied, but then w_ptr and r_ptr will again have the same value. Thus, it is not possible to determine whether it is a full or empty condition. 
 Thus, the last slot of FIFO is intentionally kept empty, and the full condition can be written as ((w_ptr+1’b1) == r_ptr)
 
-## Synchronous FIFO Verilog Code
+### Synchronous FIFO Verilog Code
 [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
 [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
 
-## Simulation Results
+### Simulation Results
 
 <ss>
 
@@ -77,8 +77,12 @@ Thus, the last slot of FIFO is intentionally kept empty, and the full condition 
 
 In asynchronous FIFO, data read and write operations use different clock frequencies. Since write and read clocks are not synchronized, it is referred to as asynchronous FIFO. Usually, these are used in systems where data need to pass from one clock domain to another which is generally termed as ‘clock domain crossing’. Thus, asynchronous FIFO helps to synchronize data flow between two systems working on different clocks.
 
-Signals:
+<img width="608" alt="asyncfifo" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/66f921be-4309-496b-a2fe-962429a6c9fe">
 
+
+### Asynchronous FIFO Operation
+
+**Signals:**
 - wr_en: write enable
 - wr_data: write data
 - full: FIFO is full
@@ -96,9 +100,30 @@ Signals:
 - b_rptr_sync: binary read pointer synchronized
 - b_wptr_sync: binary write pointer synchronized
 
-Asynchronous FIFO Operation
+**Write Operation:** In the case of an asynchronous FIFO, the write operation is associated with the write clock domain. This means that the write pointer, which tracks the location where data is being written into the FIFO, is aligned with the write clock's timing.
 
-In the case of synchronous FIFO, the write and read pointers are generated on the same clock. However, in the case of asynchronous FIFO write pointer is aligned to the write clock domain whereas the read pointer is aligned to the read clock domain. Hence, it requires domain crossing to calculate FIFO full and empty conditions. This causes metastability in the actual design. In order to resolve this metastability, 2 flip flops or 3 flip flops synchronizer can be used to pass write and read pointers. For explanation, we will go with 2 flip-flop synchronizers. Single “2 FF synchronizer” can resolve metastability for only one bit. Hence, depending on write and read pointers multiple 2FF synchronizers are required.
+**Read Operation:** Conversely, the read operation in an asynchronous FIFO is synchronized with the read clock domain. In this context, the read pointer, responsible for identifying the position from which data is being read, is aligned with the read clock's timing.
+
+**Metastability Challenge:** Managing asynchronous FIFOs introduces a critical challenge related to metastability. The fact that write and read pointers operate in separate clock domains necessitates a mechanism for safely transferring data and status information between these domains.
+
+**Mitigating Metastability:** To address this concern, we employ synchronizers, which are typically implemented using flip-flops. Specifically, we opt for a "2 flip-flop synchronizer" design. However, it's important to note that a single "2FF synchronizer" can effectively resolve metastability for just one bit.
+
+**Multiple Synchronizers:** Given that both write and read pointers comprise multiple bits, we must employ multiple instances of the "2FF synchronizer." Each synchronizer handles a distinct bit of the pointers.
+
+<img width="473" alt="2ffsynch" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/5f7ad223-30ef-4e13-98bb-43db05b8267b">
+
+**Full and Empty Conditions:**
+Efficiently detect full and empty conditions directly using gray-coded write and read pointers, eliminating the need for additional hardware to convert them into binary form.
+Full condition - wfull = (g_wptr_next == {~g_rptr_sync[PTR_WIDTH:PTR_WIDTH-1], g_rptr_sync[PTR_WIDTH-2:0]});
+Empty condition - rempty = (g_wptr_sync == g_rptr_next);
+
+### Asynchronous FIFO Verilog Code
+[Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Asynchronous%20FIFO.v)
+[Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
+
+### Simulation Results
+
+<ss>
 
 
 

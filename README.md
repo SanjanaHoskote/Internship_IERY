@@ -62,12 +62,14 @@ FIFOs come in two primary types:
 
 These two types of FIFOs play pivotal roles in ensuring orderly data flow and synchronization between components in various digital systems.
 
+<a name="2"></a>  
 ## SYNCHRONOUS FIFO 
 
 In Synchronous FIFO, data read and write operations use the same clock frequency. Usually, they are used with high clock frequency to support high-speed systems.
 
 <img width="568" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/650105c6-3ef0-4273-9c43-944c1aa3e8cf"> 
 
+<a name="3"></a>  
 ### Synchronous FIFO Operation
 
 Signals:
@@ -93,22 +95,24 @@ w_ptr == r_ptr i.e. Write and read pointers has the same value.
 The full condition means every slot in the FIFO is occupied, but then w_ptr and r_ptr will again have the same value. Thus, it is not possible to determine whether it is a full or empty condition. 
 Thus, the last slot of FIFO is intentionally kept empty, and the full condition can be written as ((w_ptr+1’b1) == r_ptr)
 
+<a name="4"></a>  
 ### Synchronous FIFO Verilog Code
 - [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
 - [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SynchronousFIFO_TB.v)
 
+<a name="5"></a>  
 ### Simulation Results
 
 <img width="917" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/3f7f76ab-b0d4-454e-8ed1-d8ec6f539f47">
 
-
+<a name="6"></a>  
 ## ASYNCHRONOUS FIFO
 
 In asynchronous FIFO, data read and write operations use different clock frequencies. Since write and read clocks are not synchronized, it is referred to as asynchronous FIFO. Usually, these are used in systems where data need to pass from one clock domain to another which is generally termed as ‘clock domain crossing’. Thus, asynchronous FIFO helps to synchronize data flow between two systems working on different clocks.
 
 <img width="608" alt="asyncfifo" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/66f921be-4309-496b-a2fe-962429a6c9fe">
 
-
+<a name="7"></a>  
 ### Asynchronous FIFO Operation
 
 **Signals:**
@@ -148,15 +152,19 @@ Full condition - wfull = (g_wptr_next == {~g_rptr_sync[PTR_WIDTH:PTR_WIDTH-1], g
 
 Empty condition - rempty = (g_wptr_sync == g_rptr_next);
 
+<a name="8"></a>  
 ### Asynchronous FIFO Verilog Code
 - [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Asynchronous%20FIFO.v)
 - [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
 
+<a name="9"></a>  
 ### Simulation Results
 
 <ss>
 
+<a name="10"></a>  
 ## Communication protocols 
+<a name="11"></a>  
 ## SPI - Serial Peripheral Interface
 
 The Serial Peripheral Interface, SPI, is an interface specification for synchronous serial data transfer, using a clock.
@@ -167,26 +175,30 @@ The Serial Peripheral Interface, SPI, is an interface specification for synchron
 - It supports max speed up to 10Mbps
 - Master provides clock for synchronisation
 - It supports 8 and 16 bit format.
-  
+
+  <a name="12"></a>  
  ### Block Diagram
  <img width="188" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/65e56af4-4552-4269-89fe-7d39897e3d5c">
  <img width="240" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/c4ba84bd-5251-4c66-a227-c2636c48e2e4">
 
+<a name="13"></a>  
  ### Timing diagram / CPOL, CPHA
  <img width="401" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/c221bcdb-a943-4f73-9cfa-142f86a9b6dd">
 
+<a name="14"></a>  
  ### State Diagram 
 <img width="400" alt="spisd" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/a09744f9-4980-47d8-8e84-894da7e8dfa2">
 
- 
+ <a name="15"></a>  
 ### SPI Verilog Code
 - [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI.v)
 - [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/SPI%20tb.v)
 
+<a name="16"></a>  
 ### Simulation results
 <img width="784" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/21aeda57-bdb4-4dc7-b663-a22329d88afb">
 
-
+<a name="17"></a>  
 ## I2C - Inter-Integrated Circuit
 Certainly, here are key points about the I2C (Inter-Integrated Circuit) communication protocol presented in the same format you provided for SPI:
 
@@ -201,22 +213,28 @@ Certainly, here are key points about the I2C (Inter-Integrated Circuit) communic
 - Clock Source : The master device provides the clock signal for synchronization.
 - Data Formats : I2C supports both 8-bit and 16-bit data formats for communication.
 
+<a name="18"></a>  
  ### Block Diagram
 <img width="466" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/2d896bf2-6086-4570-ba5d-b0a9937b570b">
 
+<a name="19"></a>  
  ### Timing diagram 
 <img width="695" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/19e0147e-7fdf-4b8c-af6c-5ece2d02aecf">
 
+<a name="20"></a>  
  ### State Diagram 
 <img width="459" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/56e3a421-5a9d-4da2-8954-afe6f2b77355">
- 
+
+ <a name="21"></a>  
 ### I2C Verilog Code
 - [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master.v)
 - [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/i2c_master_tb.v)
-  
+
+  <a name="22"></a>  
 ### Simulation results
 <img width="943" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/edadb642-ac01-45b3-a989-a4c9779e9554">
 
+<a name="23"></a>  
 ## UART - Universal Asynchronous Receiver/Transmitter
 
 A UART (Universal Asynchronous Receiver/Transmitter) is a hardware module that enables asynchronous serial communication by converting parallel data to serial data, allowing electronic devices to transmit and receive data with start and stop bits for synchronization.
@@ -232,19 +250,24 @@ A UART (Universal Asynchronous Receiver/Transmitter) is a hardware module that e
 - No Shared Clock : Unlike SPI or I2C, UART doesn't use a shared clock signal.
 - No Addressing : Lacks built-in addressing; devices must coordinate data transfer.
 
+<a name="24"></a>  
  ### Block Diagram
  <bd>
 
+<a name="25"></a>  
  ### Timing diagram 
  <td>
 
+<a name="26"></a>  
  ### State Diagram 
 <sd>
 
+<a name="27"></a>  
 ### UART Verilog Code
 - [Design]()
 - [Testbench]()
-  
+
+  <a name="28"></a>  
 ### Simulation results
 <ss>
 

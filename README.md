@@ -232,7 +232,7 @@ Certainly, here are key points about the I2C (Inter-Integrated Circuit) communic
 
   <a name="22"></a>  
 ### Simulation results
-<img width="943" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/edadb642-ac01-45b3-a989-a4c9779e9554">
+![image](https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/0211bbb2-44be-4c53-84b9-2249f860d601)
 
 <a name="23"></a>  
 ## UART - Universal Asynchronous Receiver/Transmitter

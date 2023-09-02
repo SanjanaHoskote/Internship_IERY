@@ -160,7 +160,8 @@ Empty condition - rempty = (g_wptr_sync == g_rptr_next);
 <a name="9"></a>  
 ### Simulation Results
 
-<ss>
+<img width="911" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/68bb2c4d-dd8a-421d-9b08-28aa892b69b3">
+
 
 <a name="10"></a>  
 ## Communication protocols 

@@ -155,7 +155,7 @@ Empty condition - rempty = (g_wptr_sync == g_rptr_next);
 <a name="8"></a>  
 ### Asynchronous FIFO Verilog Code
 - [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Asynchronous%20FIFO.v)
-- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/Synchronous%20FIFO.v)
+- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/AsynchronousFIFO_TB.v)
 
 <a name="9"></a>  
 ### Simulation Results

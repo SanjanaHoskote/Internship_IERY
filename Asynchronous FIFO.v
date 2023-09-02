@@ -1,3 +1,4 @@
+
 module wptr_handler #(parameter PTR_WIDTH=3) (
   input wclk, wrst_n, w_en,
   input [PTR_WIDTH:0] g_rptr_sync,
@@ -5,8 +6,8 @@ module wptr_handler #(parameter PTR_WIDTH=3) (
   output reg full
 );
 
-  reg [PTR_WIDTH:0] b_wptr_next;
-  reg [PTR_WIDTH:0] g_wptr_next;
+  wire [PTR_WIDTH:0] b_wptr_next;
+  wire [PTR_WIDTH:0] g_wptr_next;
    
   reg wrap_around;
   wire wfull;
@@ -41,8 +42,8 @@ module rptr_handler #(parameter PTR_WIDTH=3) (
   output reg empty
 );
 
-  reg [PTR_WIDTH:0] b_rptr_next;
-  reg [PTR_WIDTH:0] g_rptr_next;
+  wire [PTR_WIDTH:0] b_rptr_next;
+  wire [PTR_WIDTH:0] g_rptr_next;
 
   assign b_rptr_next = b_rptr+(r_en & !empty);
   assign g_rptr_next = (b_rptr_next >>1)^b_rptr_next;
@@ -86,8 +87,13 @@ module fifo_mem #(parameter DEPTH=8, DATA_WIDTH=8, PTR_WIDTH=3) (
     end
   end
   */
-  assign data_out = fifo[b_rptr[PTR_WIDTH-1:0]];
+ // assign data_out = fifo[b_rptr[PTR_WIDTH-1:0]];
+ always @(*) begin
+   data_out = fifo[b_rptr[PTR_WIDTH-1:0]];
+ end
+
 endmodule
+
 
 `include "synchronizer.v"
 `include "wptr_handler.v"

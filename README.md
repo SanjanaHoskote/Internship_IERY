@@ -252,7 +252,8 @@ A UART (Universal Asynchronous Receiver/Transmitter) is a hardware module that e
 
 <a name="24"></a>  
  ### Block Diagram
- <bd>
+ <img width="383" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/3c28a88e-9aac-46eb-a88e-c9f517478f8f">
+
 
 <a name="25"></a>  
  ### Timing diagram 

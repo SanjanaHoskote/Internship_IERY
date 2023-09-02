@@ -88,7 +88,7 @@ FIFO can store/write the wr_data at every posedge of the clock based on wr_en si
 **FIFO read operation:**
 The data can be taken out or read from FIFO at every posedge of the clock based on the rd_en signal till it is empty. The read pointer gets incremented on every data read from FIFO memory.
 
-**Empty condition**
+**Empty condition** 
 w_ptr == r_ptr i.e. Write and read pointers has the same value.
 
 **Full condition**

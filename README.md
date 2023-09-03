@@ -269,8 +269,8 @@ RX:
 
 <a name="27"></a>  
 ### UART Verilog Code
-- [Design]()
-- [Testbench]()
+- [Design](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/uart.v)
+- [Testbench](https://github.com/SanjanaHoskote/Internship_IERY/blob/main/uart_tb.v)
 
   <a name="28"></a>  
 ### Simulation results

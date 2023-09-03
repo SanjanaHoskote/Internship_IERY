@@ -251,7 +251,8 @@ A UART (Universal Asynchronous Receiver/Transmitter) is a hardware module that e
 
 <a name="24"></a>  
  ### Block Diagram
- <img width="383" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/3c28a88e-9aac-46eb-a88e-c9f517478f8f">
+<img width="308" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/fb633a11-a5f2-4d80-a470-c5fedd1e780e">
+<img width="323" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/40578d44-d088-4ed0-a4e1-bfbbca28600e">
 
 
 <a name="25"></a>  
@@ -260,7 +261,12 @@ A UART (Universal Asynchronous Receiver/Transmitter) is a hardware module that e
 
 <a name="26"></a>  
  ### State Diagram 
-<sd>
+ Tx:
+<img width="322" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/6e3eca25-7419-4dc3-a213-e98cf510a531">
+
+RX:
+<img width="328" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/8d61053b-901d-4817-8da4-96e81a1c2213">
+
 
 <a name="27"></a>  
 ### UART Verilog Code

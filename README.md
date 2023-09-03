@@ -201,8 +201,6 @@ The Serial Peripheral Interface, SPI, is an interface specification for synchron
 
 <a name="17"></a>  
 ## I2C - Inter-Integrated Circuit
-Certainly, here are key points about the I2C (Inter-Integrated Circuit) communication protocol presented in the same format you provided for SPI:
-
  - Serial Communication Protocol : I2C is an interface specification for synchronous serial data transfer, using a clock.
  -  Half/Full Duplex Suppor : I2C supports both half-duplex and full-duplex serial communication modes.
  -  Synchronous Communication : It is a synchronous communication protocol, utilizing a shared clock signal for synchronization.

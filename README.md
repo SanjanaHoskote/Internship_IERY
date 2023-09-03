@@ -45,7 +45,7 @@ These include :
        - [Simulation Results](#22)
     - [UART](#23)
        - [Block Diagram](#24)
-       - [Timing Diagram](#25)
+       - [Bit Rule](#25)
        - [State Diagram](#26)
        - [Verilog Code](#27)
        - [Simulation Results](#28)
@@ -252,12 +252,11 @@ A UART (Universal Asynchronous Receiver/Transmitter) is a hardware module that e
 <a name="24"></a>  
  ### Block Diagram
 <img width="308" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/fb633a11-a5f2-4d80-a470-c5fedd1e780e">
-<img width="323" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/40578d44-d088-4ed0-a4e1-bfbbca28600e">
 
 
 <a name="25"></a>  
- ### Timing diagram 
- <td>
+ ### Bit Rule
+ <img width="323" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/40578d44-d088-4ed0-a4e1-bfbbca28600e">
 
 <a name="26"></a>  
  ### State Diagram 

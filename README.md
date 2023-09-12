@@ -103,7 +103,8 @@ Thus, the last slot of FIFO is intentionally kept empty, and the full condition 
 <a name="5"></a>  
 ### Simulation Results
 
-<img width="917" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/3f7f76ab-b0d4-454e-8ed1-d8ec6f539f47">
+<img width="909" alt="image" src="https://github.com/SanjanaHoskote/Internship_IERY/assets/128903809/421ce543-3ffe-4d9a-9393-fb4ac56783eb">
+
 
 <a name="6"></a>  
 ## ASYNCHRONOUS FIFO
